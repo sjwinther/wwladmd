@@ -67,7 +67,7 @@ article h1 {
   margin-top: 40px;
 }
 article p {
-  margin: 20px 0;
+  margin-top: 20px;
   padding-right: 40px;
 }
 .big-media {
@@ -102,6 +102,6 @@ article p {
   margin: 0 auto;
   width: calc(100% - 40px);
   height: 2px;
-  background-image: url('gradient.png');
+  background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
   background-size: contain;
 }
