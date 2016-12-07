@@ -17,13 +17,9 @@ body {
   background: #fff;
 }
 a {
-  color: inherit;
+  color: blue;
   text-decoration: none;
-  border-bottom: 2px solid #eee;
-  transition: border-bottom-color 0.4s ease;
-}
-a:hover {
-  border-bottom-color: blue;
+  transition: 0.2s ease;
 }
 nav {
   padding: 0 20px;
@@ -43,6 +39,21 @@ nav li:first-child {
 nav li:last-child {
   padding-right: 0;
 }
+nav a {
+  color: #333;
+  border-bottom: 2px solid #eee;
+}
+nav a:hover {
+  color: #333;
+  border-bottom-color: blue;
+}
+.gradient {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  height: 2px;
+  background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
+  background-size: contain;
+}
 .logo {
   float: left;
 }
@@ -54,12 +65,12 @@ article {
   margin-bottom: 40px;
 }
 .keywords a {
-  font-family: 'Space Mono', monospace;
   color: blue;
+  font-family: 'Space Mono', monospace;
   border-bottom: 2px solid #fff;
-  transition: border-bottom-color 0.4s ease;
 }
 .keywords a:hover {
+  color: blue;
   border-bottom-color: blue;
 }
 article h1 {
@@ -74,34 +85,34 @@ article p {
   width: 100%;
   margin-top: 40px;
 }
-.media-container {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
 .small-media {
   width: 50%;
   align-self: center;
 }
-.media-container .caption {
+.media-container-left, .media-container-right {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.caption {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+div .caption {
   width: 50%;
   align-self: center;
   margin: 0;
 }
 .media-container-left .caption {
   order: 2;
+  padding-left: 40px;
+  padding-right: 20px;
+  text-align: left;
 }
-.caption {
-  text-align: center;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding: 0 10px;
-}
-.gradient {
-  margin: 0 auto;
-  width: calc(100% - 40px);
-  height: 2px;
-  background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
-  background-size: contain;
+.media-container-right .caption {
+  padding-right: 40px;
+  padding-left: 20px;
+  text-align: right;
 }
