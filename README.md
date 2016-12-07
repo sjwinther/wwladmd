@@ -1,2 +1,2 @@
-# wwl@dmd
-What We Learnt @ DMD
+# wwladmd
+What We Learnt at DMD
