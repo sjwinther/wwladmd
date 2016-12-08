@@ -37,10 +37,13 @@ p {
 a {
   color: blue;
   text-decoration: none;
+}
+nav a, .keywords a {
+  border-bottom: 2px solid #eee;
   transition: 0.2s ease;
 }
-a:hover {
-  color: ;
+nav a:hover, .keywords a:hover {
+  border-bottom-color: blue;
 }
 nav {
   padding: 0 20px;
@@ -48,11 +51,9 @@ nav {
 }
 nav a {
   color: #333;
-  border-bottom: 2px solid #eee;
 }
 nav a:hover {
   color: #333;
-  border-bottom-color: blue;
 }
 nav ul {
   text-align: right;
@@ -87,12 +88,6 @@ article {
 }
 .keywords a {
   font-family: 'Space Mono', monospace;
-  color: blue;
-  border-bottom: 2px solid #eee;
-}
-.keywords a:hover {
-  color: blue;
-  border-bottom-color: blue;
 }
 .big-media {
   width: 100%;
