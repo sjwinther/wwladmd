@@ -114,3 +114,9 @@ article {
   align-self: center;
   margin: 0;
 }
+.caption-left {
+  text-align: right;
+}
+.caption-right {
+  text-align: left;
+}
