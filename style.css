@@ -45,34 +45,35 @@ a {
   color: blue;
   text-decoration: none;
 }
-footer {
-  height: 40px;
+nav {
+  display: flex;
+}
+.burger {
+  display: none;
 }
 nav ul {
+  flex: 1;
   text-align: right;
-}
-nav li {
-  display: inline;
-  line-height: 100px;
-  margin: 0 10px;
-}
-nav li:first-child {
-  margin-left: 0;
-}
-nav li:last-child {
-  margin-right: 0;
 }
 nav a {
   color: #333;
   border-bottom: 2px solid #eee;
+  line-height: 100px;
 }
-.logo {
-  float: left;
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+nav li:last-child {
+  margin-right: 0;
 }
 .gradient {
   margin: 0 auto;
   height: 2px;
   background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
+}
+footer {
+  height: 40px;
 }
 .keywords {
   font-size: 0.9em;
@@ -108,20 +109,22 @@ nav a {
   margin: 0;
   text-align: left;
 }
-@media (max-width: 720px) {
+@media (max-width: 600px) {
   body {
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
   p {
     padding-right: 0;
   }
   h1 {
+    font-size: 2.2em;
     margin-top: 50px;
   }
   h2 {
+    font-size: 1.1em;
     margin-top: 20px;
   }
-  nav li {
+  nav a {
     line-height: 80px;
   }
   .keywords {
@@ -149,10 +152,40 @@ nav a {
   }
 }
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2.2em;
+  body {
+    margin-top: 80px;
+    font-size: 1.7em;
   }
-  h2 {
-    font-size: 1.1em;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 0 20px;
+  }
+  nav {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  nav a {
+    line-height: 2;
+  }
+  .logo {
+    width: 50%;
+  }
+  .burger {
+    display: block;
+    width: 50%;
+    text-align: right;
+  }
+  nav ul {
+    display: none;
+    padding-top: 10px;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
   }
 }
