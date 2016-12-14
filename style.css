@@ -180,11 +180,12 @@ footer {
     text-align: right;
   }
   nav ul {
+    flex: 0 0 100%;
     display: none;
-    width: 100%;
     padding-top: 10px;
   }
   nav li {
+    width: 100%;
     display: block;
     margin: 0;
   }
