@@ -185,8 +185,7 @@ footer {
     padding-top: 10px;
   }
   nav li {
-    display: inline-block;
+    display: block;
     margin: 0;
-    width: 100%;
   }
 }
