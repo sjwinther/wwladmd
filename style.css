@@ -50,6 +50,7 @@ nav {
 }
 .burger {
   display: none;
+  text-align: right;
 }
 nav ul {
   flex: 1;
@@ -58,7 +59,7 @@ nav ul {
 nav a {
   color: #333;
   border-bottom: 2px solid #eee;
-  line-height: 100px;
+  line-height: 80px;
 }
 nav li {
   display: inline;
@@ -111,7 +112,7 @@ footer {
 }
 @media (max-width: 600px) {
   body {
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
   p {
     padding-right: 0;
@@ -125,7 +126,7 @@ footer {
     margin-top: 20px;
   }
   nav a {
-    line-height: 80px;
+    font-size: 1.2em;
   }
   .keywords {
     margin-bottom: 20px;
@@ -153,8 +154,7 @@ footer {
 }
 @media (max-width: 480px) {
   body {
-    margin-top: 80px;
-    font-size: 1.7em;
+    margin-top: 82px;
   }
   header {
     position: fixed;
@@ -165,28 +165,26 @@ footer {
     padding: 0 20px;
   }
   nav {
-    padding: 20px 0;
     flex-wrap: wrap;
   }
-  nav a {
-    line-height: 2;
-  }
   .logo {
-    width: 50%;
+    flex: 0 0 50%;
   }
   .burger {
+    flex: 0 0 50%;
     display: block;
-    width: 50%;
-    text-align: right;
   }
   nav ul {
     flex: 0 0 100%;
     display: none;
-    padding-top: 10px;
+    padding-bottom: 40px;
   }
   nav li {
     width: 100%;
     display: block;
     margin: 0;
+  }
+  nav li a {
+    line-height: 2;
   }
 }

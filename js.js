@@ -1,4 +1,4 @@
 $("#burger").click(function() {
-  $("#menu").toggle();
+  $("#menu").slideToggle(200);
   return false;
 });
