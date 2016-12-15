@@ -37,6 +37,7 @@ h2 {
 }
 p {
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 img {
   display: block;
@@ -101,11 +102,11 @@ footer {
   margin: 40px 0;
 }
 .small-media {
-  width: 50%;
+  flex: 0 0 50%;
   align-self: center;
 }
 .media-container .caption {
-  width: 50%;
+  flex: 0 0 50%;
   align-self: center;
   margin: 0;
   text-align: left;
@@ -143,11 +144,11 @@ footer {
     margin: 30px 0 20px 0;
   }
   .small-media {
-    width: 100%;
+    flex: 0 0 100%;
     order: -1;
   }
   .media-container .caption {
-    width: 100%;
+    flex: 0 0 100%;
     text-align: center;
     margin-top: 10px;
   }
