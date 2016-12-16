@@ -43,8 +43,12 @@ img {
   display: block;
 }
 a {
-  color: blue;
+  color: #0033FF;
   text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #448FFF;
 }
 header {
   background: white;
@@ -63,8 +67,12 @@ nav ul {
 nav a {
   font-size: 1.1em;
   color: #333;
-  border-bottom: 2px solid #eee;
   line-height: 80px;
+  border-bottom: 2px solid #eee;
+  transition: border-bottom 0.2s;
+}
+nav a:hover {
+  color: #333;
 }
 nav li {
   display: inline;
@@ -119,6 +127,31 @@ footer {
   margin: 0;
   text-align: left;
 }
+
+#logo:hover {
+  border-bottom: 2px solid #0033FF;
+}
+#genres:hover {
+  border-bottom: 2px solid #66F731;
+}
+#theories:hover {
+  border-bottom: 2px solid #FFD800;
+}
+#methods:hover {
+  border-bottom: 2px solid #D635CB;
+}
+
+.genre {
+  border-bottom: 2px solid #66F731;
+}
+.theory {
+  border-bottom: 2px solid #FFD800;
+}
+.method {
+  border-bottom: 2px solid #D635CB;
+}
+
+
 table {
   margin: 30px auto;
   border-collapse: collapse;
