@@ -115,6 +115,21 @@ footer {
   margin: 0;
   text-align: left;
 }
+
+/* FRONTPAGE STYLING */
+.frontpage {
+  background-image: url('assets/frontpage-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.frontpage nav a {
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.frontpage h1 {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 1.7em;
