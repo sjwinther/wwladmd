@@ -61,6 +61,7 @@ nav ul {
   text-align: right;
 }
 nav a {
+  font-size: 1.1em;
   color: #333;
   border-bottom: 2px solid #eee;
   line-height: 80px;
@@ -120,29 +121,35 @@ footer {
   text-align: left;
 }
 
+/* FOR USE WITH JS */
+.extra-padding {
+  padding-top: 233px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
 /* FRONTPAGE STYLING */
-.frontpage {
-  background-image: url('assets/frontpage-bg.jpg');
+#frontpage {
+  background: url('assets/frontpage-bg.jpg');
   background-size: cover;
   background-position: top center;
   color: #fff;
+  transition: padding 0.2s;
 }
-.frontpage nav a {
+#frontpage nav a {
   color: #fff;
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
-.frontpage h1 {
+#frontpage h1 {
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
-.frontpage a {
+#frontpage a {
   color: #fff;
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
-.frontpage header {
+#frontpage header {
   background: rgba(255,255,255,0);
-}
-.frontpage nav ul {
-  display: none;
 }
 
 @media (max-width: 600px) {
@@ -156,9 +163,6 @@ footer {
   h2 {
     font-size: 1.1em;
     margin-top: 20px;
-  }
-  nav a {
-    font-size: 1.2em;
   }
   .keywords {
     margin-bottom: 20px;
@@ -188,7 +192,7 @@ footer {
 }
 @media (max-width: 500px) {
   body {
-    margin-top: 82px;
+    padding-top: 82px;
   }
   header {
     position: fixed;
@@ -219,8 +223,5 @@ footer {
   }
   nav li a {
     line-height: 2;
-  }
-  .frontpage .burger {
-    display: none;
   }
 }
