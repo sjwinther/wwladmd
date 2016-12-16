@@ -17,6 +17,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   background: #fff;
+  min-height: 100vh;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -44,6 +45,9 @@ img {
 a {
   color: blue;
   text-decoration: none;
+}
+header {
+  background: white;
 }
 nav {
   display: flex;
@@ -120,6 +124,7 @@ footer {
 .frontpage {
   background-image: url('assets/frontpage-bg.jpg');
   background-size: cover;
+  background-position: top center;
   color: #fff;
 }
 .frontpage nav a {
@@ -128,6 +133,16 @@ footer {
 }
 .frontpage h1 {
   border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.frontpage a {
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.frontpage header {
+  background: rgba(255,255,255,0);
+}
+.frontpage nav ul {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -180,7 +195,6 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
     padding: 0 20px;
   }
   nav {
@@ -205,5 +219,8 @@ footer {
   }
   nav li a {
     line-height: 2;
+  }
+  .frontpage .burger {
+    display: none;
   }
 }
