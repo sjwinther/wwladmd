@@ -36,7 +36,6 @@ h2 {
   margin-top: 30px;
 }
 p {
-  padding-right: 20px;
   margin-bottom: 20px;
 }
 img {
@@ -95,18 +94,23 @@ footer {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 40px;
-  padding: 0 40px;
+}
+.caption-left {
+  padding-right: 40px;
+}
+.caption-right {
+  padding-left: 40px;
 }
 .media-container {
   display: flex;
   margin: 40px 0;
 }
 .small-media {
-  flex: 0 0 50%;
+  width: 50%;
   align-self: center;
 }
 .media-container .caption {
-  flex: 0 0 50%;
+  width: 50%;
   align-self: center;
   margin: 0;
   text-align: left;
@@ -114,9 +118,6 @@ footer {
 @media (max-width: 600px) {
   body {
     font-size: 1.7em;
-  }
-  p {
-    padding-right: 0;
   }
   h1 {
     font-size: 2.2em;
@@ -136,24 +137,26 @@ footer {
     margin-top: 30px;
   }
   .caption {
-    padding: 0 20px;
     margin-bottom: 20px;
   }
   .media-container {
     flex-direction: column;
     margin: 30px 0 20px 0;
   }
+  .caption-left, .caption-right {
+    padding: 0;
+  }
   .small-media {
-    flex: 0 0 100%;
+    width: 100%;
     order: -1;
   }
   .media-container .caption {
-    flex: 0 0 100%;
+    width: 100%;
     text-align: center;
     margin-top: 10px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   body {
     margin-top: 82px;
   }
