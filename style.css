@@ -167,9 +167,10 @@ footer {
   transition: transform 0.2s;
 }
 .category:hover img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .category-title {
+  font-weight: bold;
   text-align: center;
   line-height: 60px;
   border: 1px solid #eee;
