@@ -4,7 +4,6 @@ $(document).ready(function() {
   //On the frontpage, it also toggles some extra padding, so the menu and the content do no overlap
   $("#burger").click(function() {
     $(this).toggleClass("line-through");
-    $("#frontpage").toggleClass("extra-padding");
     $("#menu").slideToggle(200);
     return false;
   });
@@ -18,7 +17,6 @@ $(document).ready(function() {
     if($width <= 500) {
       $("#menu").hide();
       $("#burger").removeClass("line-through");
-      $("#frontpage").removeClass("extra-padding");
     }
   });
 

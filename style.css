@@ -281,4 +281,12 @@ blockquote {
   th,td {
     width: 140px;
   }
+  #frontpage {
+    padding-top: 0;
+  }
+  #frontpage header {
+    position: static;
+    padding: 0;
+  }
+
 }
