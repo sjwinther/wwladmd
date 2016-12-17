@@ -196,11 +196,10 @@ blockquote {
   color: #fff;
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
-#frontpage h1 {
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+#frontpage nav a:hover {
+  border-bottom: 2px solid rgba(255,255,255,0.5);
 }
-#frontpage a {
-  color: #fff;
+#frontpage h1 {
   border-bottom: 2px solid rgba(255,255,255,0.2);
 }
 #frontpage header {
