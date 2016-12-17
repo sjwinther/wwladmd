@@ -144,7 +144,7 @@ footer {
 }
 .category {
   flex: 0 0 calc(50% - 15px);
-  margin: 20px 10px;
+  margin: 10px 10px;
   cursor: pointer;
 }
 .category:nth-child(2n+1){
@@ -351,6 +351,6 @@ blockquote {
   }
   .category {
     flex: 0 0 100%;
-    margin: 0;
+    margin: 20px 0;
   }
 }
