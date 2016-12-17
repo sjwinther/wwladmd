@@ -94,6 +94,7 @@ nav li:last-child {
 footer {
   border-top: 2px solid #eee;
   height: 80px;
+  margin-top: 40px;
 }
 .keywords {
   font-size: 0.9em;
