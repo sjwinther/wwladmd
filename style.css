@@ -18,6 +18,11 @@ body {
   padding: 0 20px;
   background: #fff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  flex: 1;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -87,7 +92,8 @@ nav li:last-child {
   background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
 }
 footer {
-  height: 40px;
+  border-top: 2px solid #eee;
+  height: 80px;
 }
 .keywords {
   font-size: 0.9em;
@@ -132,13 +138,25 @@ footer {
 #logo:hover {
   border-bottom: 2px solid #0033FF;
 }
+#logo.active {
+  border-bottom: 2px solid #0033FF;
+}
 #genres:hover {
+  border-bottom: 2px solid #66F731;
+}
+#genres.active {
   border-bottom: 2px solid #66F731;
 }
 #theories:hover {
   border-bottom: 2px solid #FFD800;
 }
+#theories.active {
+  border-bottom: 2px solid #FFD800;
+}
 #methods:hover {
+  border-bottom: 2px solid #D635CB;
+}
+#methods.active {
   border-bottom: 2px solid #D635CB;
 }
 
