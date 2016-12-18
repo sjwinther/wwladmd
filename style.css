@@ -36,7 +36,6 @@ h1 {
   margin-top: 60px;
   margin-bottom: 30px;
   font-weight: 900;
-  border-bottom: 2px solid #eee;
 }
 h2 {
   font-size: 1.2em;
@@ -80,7 +79,7 @@ nav a {
 }
 nav a:hover {
   color: #333;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ddd;
 }
 nav li {
   display: inline;
@@ -194,6 +193,25 @@ blockquote {
   font-style: italic;
   padding-left: 10px;
   margin-bottom: 40px;
+}
+
+/* WEIRD UNDERLINES */
+
+.genre:after, .concept:after, .method:after {
+  color: #aaa;
+}
+#frontpage .genre:after, #frontpage .concept:after, #frontpage .method:after {
+  color: rgba(255,255,255,0.4);
+}
+.genre:after {
+  content: " \25B2";
+  font-size: 0.7em;
+}
+.concept:after {
+  content: " \25CF";
+}
+.method:after {
+  content: " \25C6";
 }
 
 /* FOR USE WITH JS */
