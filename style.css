@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   max-width: 840px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 60px 20px;
   background: #fff;
   min-height: 100vh;
   display: flex;
@@ -23,6 +23,7 @@ body {
 }
 article {
   flex: 1;
+  border-bottom: 2px solid #eee;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
@@ -90,11 +91,6 @@ nav li:last-child {
   margin: 0 auto;
   height: 2px;
   background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
-}
-footer {
-  border-top: 2px solid #eee;
-  height: 80px;
-  margin-top: 40px;
 }
 .keywords {
   margin-top: -20px;
@@ -245,11 +241,15 @@ blockquote {
 
 /* FRONTPAGE STYLING */
 #frontpage {
+  padding: 0 20px 40px 20px;
   background: url('assets/frontpage-bg.jpg');
   background-size: cover;
   background-position: top center;
   color: #fff;
   transition: padding 0.2s;
+}
+#frontpage article {
+  border: none;
 }
 #frontpage nav a {
   color: #fff;
