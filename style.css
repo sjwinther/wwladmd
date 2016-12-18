@@ -1,5 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700|Space+Mono:400');
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('fonts/FiraSans-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('fonts/FiraSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('fonts/FiraSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Space Mono';
+  src: url('fonts/SpaceMono-regular.ttf');
+  font-weight: normal;
+}
 
+/* Small reset to better be able to control element sizing */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +31,7 @@ html {
   font-size: 62.5%;
   color: #333;
 }
+/* Body styles are primarily chosen to improve legibility. Max-width ensures a readable paragraph width, and line-height ensures that the text is easy on the eyes */
 body {
   font-size: 1.8em;
   line-height: 1.6;
@@ -21,13 +43,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* Flex is set to ensure that the main-element stretches to the whole page. This way border-bottom doesn't display in the middel of the page, when there is not a lot of content */
 main {
   flex: 1;
   padding-bottom: 40px;
   border-bottom: 2px solid #eee;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
 }
 h1 {
   display: inline-block;
@@ -47,6 +67,7 @@ p {
   margin-bottom: 20px;
 }
 img {
+  max-width: 100%;
   display: block;
 }
 a {
@@ -57,6 +78,7 @@ a {
 a:hover {
   color: dodgerblue;
 }
+/* Ensures that the fixed header is not transparent... */
 header {
   background: white;
 }
@@ -132,7 +154,7 @@ nav li:last-child {
   text-align: left;
 }
 
-/* PAGE CATEGORIES */
+/* Page category stuff */
 .category-wrapper {
   width: 100%;
   display: flex;
@@ -159,7 +181,6 @@ nav li:last-child {
   overflow: hidden;
 }
 .category-img {
-  max-width: 100%;
   transition: transform 0.2s;
 }
 .category:hover img {
@@ -172,7 +193,7 @@ nav li:last-child {
   border: 1px solid #eee;
 }
 
-/* TABLE STUFF */
+/* Table stuff */
 table {
   margin: 40px auto;
   border-collapse: collapse;
@@ -196,13 +217,9 @@ blockquote {
   margin-bottom: 40px;
 }
 
-/* WEIRD UNDERLINES */
-
+/* Symbols related to content types */
 .genre:after, .concept:after, .method:after {
   color: #aaa;
-}
-#frontpage .genre:after, #frontpage .concept:after, #frontpage .method:after {
-  color: rgba(255,255,255,0.4);
 }
 .genre:after {
   content: " \25B2";
@@ -215,15 +232,12 @@ blockquote {
   content: " \25C6";
 }
 
-/* FOR USE WITH JS */
-.extra-padding {
-  padding-top: 233px;
-}
+/* For use with JS */
 .line-through {
   text-decoration: line-through;
 }
 
-/* FRONTPAGE STYLING */
+/* Frontpage styling overrides */
 #frontpage {
   padding: 0 20px 40px 20px;
   background: url('assets/frontpage-bg.jpg');
@@ -247,6 +261,9 @@ blockquote {
 }
 #frontpage header {
   background: rgba(255,255,255,0);
+}
+#frontpage .genre:after, #frontpage .concept:after, #frontpage .method:after {
+  color: rgba(255,255,255,0.4);
 }
 
 @media (max-width: 600px) {
@@ -288,9 +305,6 @@ blockquote {
   }
 }
 @media (max-width: 500px) {
-  body {
-    padding-top: 82px;
-  }
   header {
     position: fixed;
     top: 0;
@@ -298,8 +312,15 @@ blockquote {
     width: 100%;
     padding: 0 20px;
   }
+  /* Extra body padding since the menu is now displaying with a fixed position */
+  body {
+    padding-top: 82px;
+  }
   nav {
     flex-wrap: wrap;
+  }
+  nav a {
+    line-height: 60px;
   }
   .logo {
     flex: 0 0 50%;
@@ -324,15 +345,12 @@ blockquote {
   th,td {
     width: 140px;
   }
-  #frontpage {
-    padding-top: 0;
+  .category {
+    flex: 0 0 100%;
+    margin: 20px 0;
   }
   #frontpage header {
     position: static;
     padding: 0;
-  }
-  .category {
-    flex: 0 0 100%;
-    margin: 20px 0;
   }
 }
