@@ -171,43 +171,6 @@ nav li:last-child {
   border: 1px solid #eee;
 }
 
-/* NAV UNNDERLINES ... */
-#logo:hover {
-  border-bottom: 2px solid #0033FF;
-}
-#logo.active {
-  border-bottom: 2px solid #0033FF;
-}
-#genres:hover {
-  border-bottom: 2px solid #66F731;
-}
-#genres.active {
-  border-bottom: 2px solid #66F731;
-}
-#theories:hover {
-  border-bottom: 2px solid #FFD800;
-}
-#theories.active {
-  border-bottom: 2px solid #FFD800;
-}
-#methods:hover {
-  border-bottom: 2px solid #D635CB;
-}
-#methods.active {
-  border-bottom: 2px solid #D635CB;
-}
-
-/* HEADING UNDERLINES */
-.genre {
-  border-bottom: 2px solid #66F731;
-}
-.theory {
-  border-bottom: 2px solid #FFD800;
-}
-.method {
-  border-bottom: 2px solid #D635CB;
-}
-
 /* TABLE STUFF */
 table {
   margin: 40px auto;
