@@ -21,8 +21,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-article {
+main {
   flex: 1;
+  padding-bottom: 40px;
   border-bottom: 2px solid #eee;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -248,7 +249,7 @@ blockquote {
   color: #fff;
   transition: padding 0.2s;
 }
-#frontpage article {
+#frontpage main {
   border: none;
 }
 #frontpage nav a {
