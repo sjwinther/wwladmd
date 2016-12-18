@@ -40,12 +40,19 @@ body {
   padding: 0 20px 60px 20px;
   background: #fff;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /* Flex is set to ensure that the main-element stretches to the whole page. This way border-bottom doesn't display in the middel of the page, when there is not a lot of content */
 main {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding-bottom: 40px;
   border-bottom: 2px solid #eee;
 }
@@ -73,6 +80,7 @@ img {
 a {
   color: blue;
   text-decoration: none;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 a:hover {
@@ -83,6 +91,8 @@ header {
   background: white;
 }
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .burger {
@@ -90,7 +100,9 @@ nav {
   text-align: right;
 }
 nav ul {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
 }
 nav a {
@@ -98,6 +110,7 @@ nav a {
   color: #333;
   line-height: 80px;
   border-bottom: 2px solid #eee;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 nav a:hover {
@@ -114,6 +127,7 @@ nav li:last-child {
 .gradient {
   margin: 0 auto;
   height: 2px;
+  background-image: -webkit-linear-gradient(left, red, hotpink, blue, cyan, lightgreen, orange, red);
   background-image: linear-gradient(to right, red, hotpink, blue, cyan, lightgreen, orange, red);
 }
 .keywords {
@@ -140,16 +154,22 @@ nav li:last-child {
   padding-left: 40px;
 }
 .media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 40px 0;
 }
 .small-media {
   width: 50%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .media-container .caption {
   width: 50%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 0;
   text-align: left;
 }
@@ -157,11 +177,16 @@ nav li:last-child {
 /* Page category stuff */
 .category-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .category {
-  flex: 0 0 calc(50% - 15px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 15px);
+          flex: 0 0 calc(50% - 15px);
   margin: 10px 10px;
   cursor: pointer;
 }
@@ -181,10 +206,14 @@ nav li:last-child {
   overflow: hidden;
 }
 .category-img {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .category:hover img {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .category-title {
   font-weight: bold;
@@ -244,6 +273,7 @@ blockquote {
   background-size: cover;
   background-position: top center;
   color: #fff;
+  -webkit-transition: padding 0.2s;
   transition: padding 0.2s;
 }
 #frontpage main {
@@ -288,7 +318,10 @@ blockquote {
     margin-bottom: 20px;
   }
   .media-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 30px 0 20px 0;
   }
   .caption-left, .caption-right {
@@ -296,7 +329,9 @@ blockquote {
   }
   .small-media {
     width: 100%;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .media-container .caption {
     width: 100%;
@@ -317,20 +352,27 @@ blockquote {
     padding-top: 82px;
   }
   nav {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   nav a {
     line-height: 60px;
   }
   .logo {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
   .burger {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     display: block;
   }
   nav ul {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     display: none;
     padding-bottom: 40px;
   }
@@ -346,7 +388,9 @@ blockquote {
     width: 140px;
   }
   .category {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     margin: 20px 0;
   }
   #frontpage header {
