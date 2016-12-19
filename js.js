@@ -7,7 +7,9 @@ $(document).ready(function() {
     return false;
   });
 
-  //Upon window resize, the burger-style menu closes. If the window reaches a width above 500px the menu items reappear as normal
+  //Upon window resize, the burger-style menu closes
+  //This is done to prevent the dropdown from staying open if the user resizes back and forth, e.g. going from portrait to landscape on mobile
+  //If the window reaches a width above 520px the menu items reappear as normal
   $(window).resize(function() {
     var $width = $(window).width();
     if($width > 520) {
