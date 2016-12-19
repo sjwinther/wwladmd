@@ -10,10 +10,10 @@ $(document).ready(function() {
   //Upon window resize, the burger-style menu closes. If the window reaches a width above 500px the menu items reappear as normal
   $(window).resize(function() {
     var $width = $(window).width();
-    if($width >= 500) {
+    if($width > 520) {
       $("#menu").show();
     }
-    if($width <= 500) {
+    if($width < 520) {
       $("#menu").hide();
       $("#burger").removeClass("line-through");
     }
