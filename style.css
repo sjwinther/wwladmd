@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('fonts/FiraSans-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('fonts/FiraSans-Italic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('fonts/FiraSans-Bold.ttf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'Space Mono';
-  src: url('fonts/SpaceMono-Regular.ttf');
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700|Space+Mono');
 
 /* Small reset to better be able to control element sizing */
 * {
