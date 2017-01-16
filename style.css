@@ -217,7 +217,7 @@ blockquote {
   margin-bottom: 40px;
 }
 
-/* Symbols related to content types */
+/* Symbols related to content types
 .genre:after, .concept:after, .method:after {
   color: #ccc;
 }
@@ -230,7 +230,7 @@ blockquote {
 }
 .method:after {
   content: " \25C6";
-}
+}*/
 
 /* For use with JS */
 .line-through {
